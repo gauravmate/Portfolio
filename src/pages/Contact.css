@@ -1,0 +1,125 @@
+/* ===================== CONTACT SECTION ===================== */
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #2e3f46;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #0b0b0b, #0f77c6, #00152b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.contact-title::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+.contact-description {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 30px 24px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  outline: none;
+}
+
+.contact-button {
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(99, 102, 241, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-description {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-description {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  background-color: #0a0a0a;  /* Dark background */
+  color: #ffffff;            /* White text */
+  text-align: center;
+  padding: 20px 16px;        /* Vertical + horizontal padding */
+  border-top: 1px solid #333;/* Subtle top border */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-text {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #9ca3af;           /* Grayish text for secondary info */
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}

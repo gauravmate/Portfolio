@@ -1,0 +1,108 @@
+/* ===================== ABOUT SECTION ===================== */
+
+.about-wrapper {
+  margin-top: -5rem;
+  padding: 80px 20px;
+  background-color: #2e3f46;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-title {
+  position: relative;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(135deg, #0b0b0b, #0f77c6, #00152b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 140px;
+  height: 3px;
+  background: linear-gradient(135deg, #0b0b0b, #0f77c6, #00152b);
+  margin: 12px auto 0;
+  border-radius: 6px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.about-text:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.highlight {
+  font-weight: 600;
+  color: #9333ea;
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #14b8a6, #9333ea);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.highlight:hover::after {
+  transform: scaleX(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 60px 10px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+}
